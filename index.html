@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haagen-Dazs</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- 모바일 메뉴 버튼 -->
+  <a href="#" class="mb-bt">
+    <span class="line"></span>
+  </a>
+  <!-- 모바일 메뉴바 -->
+  <div class="mb-nav ">
+    <div class="mb-nav-top clear">
+      <a href="#">로그인</a>
+      <a href="#">회원가입</a>
+      <a href="#">장바구니</a>
+      <a href="#">주문/배송조회</a>
+    </div>
+    <div class="mb-nav-main">
+      <ul class="mb-menu">
+        <li>
+          <a href="#" class="mb-mainmenu">PRODUCT</a>
+          <ul class="mb-submenu">
+            <li><a href="#">추천제품</a></li>
+            <li><a href="#">단독구성</a></li>
+            <li><a href="#">선물추천</a></li>
+            <li><a href="#">모든제품</a></li>
+            <li><a href="#">파인트</a></li>
+            <li><a href="#">미니컵</a></li>
+            <li><a href="#">스틱바/샌드</a></li>
+            <li><a href="#">케이크&디저트</a></li>
+            <li><a href="#">굿즈</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="mb-mainmenu">BRAND</a>
+          <ul class="mb-submenu">
+            <li><a href="#">브랜드 소개</a></li>
+            <li><a href="#">하겐다즈 가치</a></li>
+            <li><a href="#">품질좋은 원료</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="mb-mainmenu">MEMBERSHIP</a>
+          <ul class="mb-submenu">
+            <li><a href="#">멤버십</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="mb-mainmenu">STORE</a>
+          <ul class="mb-submenu">
+            <li><a href="#">매장 안내</a></li>
+            <li><a href="#">매장 메뉴</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">업소문의</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="mb-mainmenu">외식사업 고객용[B2B]</a>
+          <ul class="mb-submenu">
+            <li><a href="#">솔루션</a></li>
+            <li><a href="#">제품 소개</a></li>
+            <li><a href="#">구매/취급 문의</a></li>
+            <li><a href="#">레시피</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="mb-nav-bottom clear">
+        <a href="#">공지사항</a>
+        <a href="#">이벤트</a>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- 모바일 메뉴마스크 -->
+  <div class="mb-menu-mask"></div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="top_nav">
+      <div class="inner">
+        <ul class="top_sns">
+          <li>
+            <a href="https://www.facebook.com/HaagenDazsKR/" target="_blank"><img src="images/facebook-symbol-01.png"
+                alt="페이스북 아이콘"><img class="hover" src="images/facebook-symbol-02.png" alt="페이스북 흰색 아이콘"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/haagendazskorea/" target="_blank"><img src="images/instagram01.png"
+                alt="인스타그램 아이콘"><img class="hover" src="images/instagram02.png" alt="인스타그램 흰색 아이콘"></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/c/HaagenDazsKorea/featured" target="_blank"><img src="images/youtube01.png"
+                alt="유튜브 아이콘"><img class="hover" src="images/youtube02.png" alt="유튜브 흰색 아이콘"></a>
+          </li>
+          <li>
+            <a href="https://pf.kakao.com/_AYskxb" target="_blank"><img src="images/kakaotalk01.png" alt="카카오톡 아이콘"><img
+                class="hover" src="images/kakaotalk02.png" alt="카카오톡 흰색 아이콘"></a>
+          </li>
+        </ul>
+        <ul class="top_members clear">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">장바구니</a></li>
+          <li><a href="#">주문/배송조회</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main_nav">
+      <div class="inner">
+        <nav>
+          <ul class="main clear">
+            <li>
+              <a href="#">PRODUCT</a>
+              <ul class="sub">
+                <li><a href="#">추천제품</a></li>
+                <li><a href="#">단독구성</a></li>
+                <li><a href="#">선물추천</a></li>
+                <li><a href="#">모든제품</a></li>
+                <li><a href="#">파인트</a></li>
+                <li><a href="#">미니컵</a></li>
+                <li><a href="#">스틱바/샌드</a></li>
+                <li><a href="#">케이크&디저트</a></li>
+                <li><a href="#">굿즈</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">BRAND</a>
+              <ul class="sub">
+                <li><a href="#">브랜드 소개</a></li>
+                <li><a href="#">하겐다즈 가치</a></li>
+                <li><a href="#">품질좋은 원료</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">MEMBERSHIP</a>
+              <ul class="sub">
+                <li><a href="#">멤버십</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="special_product">
+                <a href="#">
+                  <img src="images/cookies-and-cream-pint-sh.png" width="150px" height="150px" alt="특별상품 이미지" />
+                  <p class="title">특별상품</p>
+                  <p class="content">쿠키 & 크림 [파인트]</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="#">STORE</a>
+              <ul class="sub">
+                <li><a href="#">매장 안내</a></li>
+                <li><a href="#">매장 메뉴</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">업소문의</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">외식사업 고객용[B2B]</a>
+              <ul class="sub">
+                <li><a href="#">솔루션</a></li>
+                <li><a href="#">제품 소개</a></li>
+                <li><a href="#">구매/취급 문의</a></li>
+                <li><a href="#">레시피</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">검색창</a>
+              <ul class="sub">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="top_search">
+          <form action="" id="search_form">
+            <label for="search"></label>
+            <input type="text" id="search" />
+            <a href="#"></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <h1 class="top_logo">
+    <a href="#"><img src="images/Logo.png" alt="메인로고"/></a>
+  </h1>
+  <!-- VISUAL -->
+  <section class="visual">
+    <div class="swiper sw-visual">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a class="vs-slide1">
+            <img src="images/banner_01.png" alt="pc banner_01">
+            <i>
+              <div class="box ani-text animate__animated animate__fadeInDown">
+              <img src="images/mobile_banner_text01.png" alt="모바일 배너 01 텍스트">
+              </div>
+              <div class="box ani-pic animate__animated animate__fadeInUp" >
+              <img src="images/mobile_banner_pic01.png" alt="모바일 배너 01 상품">
+              </div>
+             
+            </i>
+          
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="vs-slide2">
+            <img src="images/banner_02.png" alt="pc banner_02">
+            <i>
+              <div class="box ani-text animate__animated animate__fadeInDown">
+              <img src="images/mobile_banner_text02.png" alt="모바일 배너 02 텍스트">
+              </div>
+              <div class="box ani-pic animate__animated animate__fadeInUp" >
+              <img src="images/mobile_banner_pic02.png" alt="모바일 배너 02 상품">
+              </div>
+            </i>
+           </a>
+        </div>
+      </div>
+      <div class="button-next"></div>
+      <div class="button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <main>
+    <!-- Best Fravor -->
+    <section class="best_fravor">
+      <h2>BEST ICECREAM FRAVOR</h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a class="vs-slide1"><img src="images/best_f_01.png"
+                onmouseover="this.src='images/best_f_hover01.png'" onmouseout="this.src='images/best_f_01.png'" alt="1위 스트로베리">
+              <p>스트로베리</p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide2"><img src="images/best_f_02.png"
+                onmouseover="this.src='images/best_f_hover02.png'" onmouseout="this.src='images/best_f_02.png'" alt="2위 그린티">
+              <p>그린티</p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide3"><img src="images/best_f_03.png"
+                onmouseover="this.src='images/best_f_hover03.png'" onmouseout="this.src='images/best_f_03.png'" alt="3위 키위망고">
+              <p>프로즌 요거트 키위 & 망고</p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide4"><img src="images/best_f_04.png"
+                onmouseover="this.src='images/best_f_hover04.png'" onmouseout="this.src='images/best_f_04.png'" alt="4위 초코아몬드">
+              <p>다크 초콜릿 가나슈 & 아몬드 </p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide5"><img src="images/best_f_05.png"
+                onmouseover="this.src='images/best_f_hover05.png'" onmouseout="this.src='images/best_f_05.png'" alt="5위 초콜릿">
+              <p>초콜릿</p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide6"><img src="images/best_f_06.png"
+                onmouseover="this.src='images/best_f_hover06.png'" onmouseout="this.src='images/best_f_06.png'" alt="6위 치즈케이크">
+              <p>스트로베리 치즈케이크</p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide1"><img src="images/best_f_01.png"
+                onmouseover="this.src='images/best_f_hover01.png'" onmouseout="this.src='images/best_f_01.png'" alt="1위 스트로베리">
+              <p>스트로베리</p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide2"><img src="images/best_f_02.png"
+                onmouseover="this.src='images/best_f_hover02.png'" onmouseout="this.src='images/best_f_02.png'" alt="2위 그린티">
+              <p>그린티</p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide3"><img src="images/best_f_03.png"
+                onmouseover="this.src='images/best_f_hover03.png'" onmouseout="this.src='images/best_f_03.png'" alt="3위 키위망고">
+              <p>프로즌 요거트 키위 & 망고</p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide4"><img src="images/best_f_04.png"
+                onmouseover="this.src='images/best_f_hover04.png'" onmouseout="this.src='images/best_f_04.png'" alt="4위 초코아몬드">
+              <p>다크 초콜릿 가나슈 & 아몬드 </p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide5"><img src="images/best_f_05.png"
+                onmouseover="this.src='images/best_f_hover05.png'" onmouseout="this.src='images/best_f_05.png'" alt="5위 초콜릿">
+              <p>초콜릿</p>
+            </a></div>
+          <div class="swiper-slide"><a class="vs-slide6"><img src="images/best_f_06.png"
+                onmouseover="this.src='images/best_f_hover06.png'" onmouseout="this.src='images/best_f_06.png'" alt="6위 치즈케이크">
+              <p>스트로베리 치즈케이크</p>
+            </a></div>
+        </div>
+      </div>
+      <div class="fravor-button-next"></div>
+      <div class="fravor-button-prev"></div>
+    </section>
+    <!-- Haggen Dazs Product -->
+    <section class="product">
+      <div class="inner">
+        <h2>HAGGEN-DAZS PRODUCT</h2>
+        <div class="product-menu">
+          <div class="left-column column">
+            <div class="menu left" id="left-first">
+              <a href="#">
+                <div class="text">
+                  <h3>미니컵</h3>
+                  <p>60년 이상 이어져 온<br class="db">타협하지 않는<br class="dn">장인정신의 레시피</p>
+                </div>
+                <div class="circle"><img src="images/minicup_circle.png" alt="미니컵 더보기"></div>
+                <div class="scale-img"><img src="images/pd_minicup.png" alt="미니컵"></div>
+              </a>
+            </div>
+            <div class="menu left" id="left-second">
+              <a href="#">
+                <div class="text">
+                  <h3>크런치콘</h3>
+                  <p>하겐다즈 아이스크림을 고소하고 바삭한<br>크런치콘에 가득담았습니다.<br>반해버릴 수 밖에 없는 완벽한 비주얼을 만나보세요!</p>
+                </div>
+                <div class="circle"><img src="images/crunch_circle.png" alt="크런치콘 더보기"></div>
+                <div class="scale-img"><img src="images/pd_crunch.png" alt="크런치콘"></div>
+              </a>
+            </div>
+          </div>
+          <div class="center-column column">
+            <div class="menu center" id="center-first">
+              <a href="#">
+                <div class="text">
+                  <h3>파인트</h3>
+                  <p>원료부터 남다른<br>하겐다즈 프리미엄 아이스크림</p>
+                </div>
+                <div class="circle"><img src="images/pint_circle.png" alt="파인트 더보기"></div>
+                <div class="scale-img">
+                  <img src="images/pd_pint.png" alt="파인트">
+                </div>
+              </a>
+            </div>
+            <div class="menu center" id="center-second">
+              <a href="#">
+                <div class="text">
+                  <h3>쿼터</h3>
+                  <p>파인트 2배 사이즈 946ml<br>원재료 맛 그대로,<br>밀도있게 담아냈습니다!</p>
+                </div>
+                <div class="circle"><img src="images/quarter_circle.png" alt="쿼터 더보기"></div>
+                <div class="scale-img"><img src="images/pd_quarter.png" alt="쿼터"></div>
+              </a>
+            </div>
+            <div class="menu center" id="center-third">
+              <a href="#">
+                <div class="text">
+                  <h3>스틱바</h3>
+                  <p>다채로운 식감을 한꺼번에 느낄 수 있는 프리미엄 스틱바 아이스크림</p>
+                </div>
+                <div class="circle"><img src="images/stick_circle.png" alt="스틱바 더보기"></div>
+                <div class="scale-img"><img src="images/pd_stick.png" alt="스틱바"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="right-column column">
+            <div class="menu right" id="right-first">
+              <a href="#">
+                <div class="text">
+                  <h3>아이스크림 케이크</h3>
+                  <p>특별한 날 분위기를 한층 더 업 시켜줄 하겐다즈 프리미엄 케이크로 소중한 사람과 특별한 시간을 보내세요!</p>
+                </div>
+                <div class="circle"><img src="images/cake_circle.png" alt="아이스크림케이크 더보기"></div>
+                <div class="scale-img"><img src="images/pd_cake.png" alt="아이스크림케이크"></div>
+              </a>
+            </div>
+            <div class="menu right" id="right-second">
+              <a href="#">
+                <div class="text">
+                  <h3>아이스크림 마카롱</h3>
+                  <p>부드럽고 진한 프리미엄 아이스크림과<br>고급 프랑스 디저트 마카롱을 함께 즐겨보세요!</p>
+                </div>
+                <div class="circle"><img src="images/macaroon_circle.png" alt="마카롱 더보기"></div>
+                <div class="scale-img"><img src="images/pd_macaroon.png" alt="마카롱"></div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <!-- Haggen Dazs Product-Mobile -->
+        <div class="product-menu-mobile">
+          <div class="left-column column">
+            <div class="menu left" id="left-first">
+              <a href="#">
+                <div class="text">
+                  <h3>미니컵</h3>
+                  <p>60년 이상 이어져 온<br>타협하지 않는 장인정신의 레시피</p>
+                </div>
+                <div class="circle"><img src="images/minicup_circle.png" alt="미니컵 더보기"></div>
+                <div class="scale-img"><img src="images/pd_minicup.png" alt="미니컵"></div>
+              </a>
+            </div>
+            <div class="menu left" id="left-second">
+              <a href="#">
+                <div class="text">
+                  <h3>크런치콘</h3>
+                  <!-- <p>하겐다즈 아이스크림을 고소하고 바삭한 크런치콘에 가득~ 반해버릴 수 밖에 없는 완벽한 비주얼을 만나보세요!</p> -->
+                  <p>고소하고 바삭한 크런치콘!
+                    반해버릴 수 밖에 없는 완벽한 비주얼을 만나보세요.
+                  </p>
+                </div>
+                <div class="circle"><img src="images/crunch_circle.png" alt="크런치콘 더보기"></div>
+                <div class="scale-img"><img src="images/pd_crunch.png" alt="크런치콘"></div>
+              </a>
+            </div>
+            <div class="menu left" id="right-first">
+              <a href="#">
+                <div class="text">
+                  <h3>아이스크림 케이크</h3>
+                  <p>특별한 날 분위기를 한층 더 업 시켜줄 케이크로 소중한 사람과 특별한 시간을 보내세요!</p>
+                </div>
+                <div class="circle"><img src="images/cake_circle.png" alt="아이스크림케이크 더보기"></div>
+                <div class="scale-img"><img src="images/pd_cake.png" alt="아이스크림케이크"></div>
+              </a>
+            </div>
+          </div>
+          <div class="right-column column">
+            <div class="menu center" id="center-first">
+              <a href="#">
+                <div class="text">
+                  <h3>파인트</h3>
+                  <p>원료부터 남다른<br>하겐다즈 프리미엄 아이스크림</p>
+                </div>
+                <div class="circle"><img src="images/pint_circle.png" alt="파인트 더보기"></div>
+                <div class="scale-img">
+                  <img src="images/pd_pint.png" alt="파인트">
+                </div>
+              </a>
+            </div>
+            <div class="menu center" id="center-second">
+              <a href="#">
+                <div class="text">
+                  <h3>쿼터</h3>
+                  <p>파인트 2배 사이즈 946ml.<br> 원재료 맛 그대로, 밀도있게 담아냈습니다!</p>
+                </div>
+                <div class="circle"><img src="images/quarter_circle.png" alt="쿼터 더보기"></div>
+                <div class="scale-img"><img src="images/pd_quarter.png" alt="쿼터"></div>
+              </a>
+            </div>
+            <div class="menu bottom" id="right-second">
+              <a href="#">
+                <div class="text">
+                  <h3>아이스크림 마카롱</h3>
+                  <p>부드럽고 진한 프리미엄 아이스크림과 고급 프랑스 디저트 마카롱을 함께 즐겨보세요!</p>
+                </div>
+                <div class="circle"><img src="images/macaroon_circle.png" alt="마카롱 더보기"></div>
+                <div class="scale-img"><img src="images/pd_macaroon.png" alt="마카롱"></div>
+              </a>
+            </div>
+          
+          </div>
+          <div class="bottom-column column">
+            <div class="menu bottom" id="center-third">
+              <a href="#">
+                <div class="text">
+                  <h3>스틱바</h3>
+                  <p>다채로운 식감을 한꺼번에 느낄 수 있는 프리미엄 스틱바 아이스크림</p>
+                </div>
+                <div class="circle"><img src="images/stick_circle.png" alt="스틱바 더보기"></div>
+                <div class="scale-img"><img src="images/pd_stick.png" alt="스틱바"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- BRAND STORY & FIND STORE -->
+    <section class="brand_store">
+      <div class="brand_store inner">
+        <!-- BRAND STORY -->
+        <div class="brand_story store">
+          <a href="#">
+            <div class="text">
+              <h3>BRAND STORY</h3>
+              <h4>하겐다즈 브랜드 스토리</h4>
+              <p>1961년 부터 시작된<br>프리미엄 아이스크림 브랜드 하겐다즈</p>
+              <p>그 시작과 끝은 고품질의 원료와<br>60년 넘게 이어져온 철저한 장인정신입니다.</p>
+            </div>
+            <div class="more-btn">
+              <div class="more-btn-inner">
+                <span></span>
+                <span></span>
+              </div>
+              <p>more</p>
+            </div>
+          </a>
+        </div>
+        <!--FIND STORE  -->
+        <div class="find_store store on">
+          <a href="#">
+            <div class="text">
+              <h3>FIND A STORE</h3>
+              <h4>하겐다즈 매장 찾기</h4>
+              <p>60년 동안 사랑받은<br>하겐다즈 프리미엄 아이스크림을</p>
+              <p class="mn">전국 오프라인 스토어에서 만나보세요!</p>
+            </div>
+            <div class="more-btn">
+              <div class="more-btn-inner">
+                <span></span>
+                <span></span>
+              </div>
+              <p>more</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+     <!-- HAGGEN-DAZS SNS -->
+     <section class="sns">
+      <h2>HAGGEN-DAZS SNS</h2>
+      <!-- <div class="sns_txt"></div>
+      <h4>하겐다즈와 함께하는 SNS<br>Follow us!</h4> -->
+      <div class="sns_icon">
+        <div class="icon">
+          <a href="https://www.facebook.com/HaagenDazsKR/" target="_blank"><img src="images/facebook-symbol-01.png" alt="페이스북 아이콘"><img class="hover" src="images/facebook-symbol-02.png" alt="페이스북 흰색 아이콘"></a>
+        </div>
+        <div class="icon">
+          <a href="https://www.instagram.com/haagendazskorea/" target="_blank"><img src="images/instagram01.png" alt="인스타그램 아이콘"><img class="hover" src="images/instagram02.png" alt="인스타그램 흰색 아이콘"></a>
+        </div>
+        <div class="icon">
+          <a href="https://www.youtube.com/c/HaagenDazsKorea/featured" target="_blank"><img src="images/youtube01.png" alt="유튜브 아이콘"><img class="hover" src="images/youtube02.png" alt="유튜브 흰색 아이콘"></a>
+        </div>
+        <div class="icon">
+          <a href="https://pf.kakao.com/_AYskxb" target="_blank"><img src="images/kakaotalk01.png" alt="카카오톡 아이콘"><img class="hover" src="images/kakaotalk02.png" alt="카카오톡 흰색 아이콘"></a>
+        </div>
+      </div>
+
+     
+
+    </section>
+     <!-- FOOTER -->
+  <footer class="footer">
+    <div class="inner">
+      <div class="footer_logo"><a href="#"><img src="images/footer_Logo.png" alt="푸터 로고"></a></div>
+      <div class="footer_contents clear">
+        <div class="footer_left">
+          <p class="dn">하겐다즈몰은 주식회사 에스와이피글로벌에서 판매운영대행을 하고 있습니다.</p>
+          <dl>
+            <dt>한국하겐-다즈㈜ 대표: 김미조</dt>
+            <dd>
+              <span>주소: 서울특별시 강남구 테헤란로 311 (역삼동, 아남타워 6층)ㅣ사업자등록번호: 106-81-28964</span>
+              <span>통신판매신고: 강남-8186ㅣ대표전화: 02-508-8500 ㅣ 개인정보관리책임자: 김미조 대표</span>
+            </dd>
+          </dl>
+          <dl class="dn">
+            <dt>주식회사 에스와이피글로벌 대표: 김광용 (사업자정보확인)</dt>
+            <dd>
+              <span>주소: 서울특별시 강남구 봉은사로112길 26, 5층 502호(삼성동, 한호빌딩)</span>
+              <span>사업자등록번호: 262-88-00829ㅣ통신판매신고 : 2018-서울강남-00403 ㅣ 대표전화: 070-7549-7020</span>
+              <span>Email: cs@unitoa.com ㅣ 개인정보관리책임자:조현정</span>
+            </dd>
+          </dl>
+        </div>
+        <div class="footer_number">
+          <p>하겐다즈 고객만족센터</p>
+          <strong>070-7549-7020</strong>
+          <ul>
+            <li>* 고객센터 운영시간 : 평일 10:00 ~ 17:00</li>
+            <li>(점심시간 12:00~13:00)</li>
+          </ul>
+          <ul>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+          </ul>
+        </div>
+        <div class="footer_menu">
+          <ul>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">BRAND</a></li>
+            <li><a href="#">MEMBERSHIP</a></li>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#">외식사업 고객용[B2B]</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+          <select class="family_site" name="" id="family_site">
+            <option value>패밀리사이트</option>
+            <option value="">하겐다즈 공식 스토어</option>
+            <option value="">하겐다즈 B2B 공식몰</option>
+            <option value="">제너럴믹스 공식 스토어</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2021 Haagen-Dazs Korea. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </main>
+</body>
+
+</html>
